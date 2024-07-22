@@ -58,8 +58,8 @@ def get_trainer(
             num_workers=num_workers,
             resources_per_worker={"CPU": 2},
             trainer_resources={"CPU": 0},
-            use_gpu=use_gpu,
-            placement_strategy="STRICT_PACK",
+            use_gpu=use_gpu
+            # placement_strategy="STRICT_PACK",
         ),
     )
     return trainer
